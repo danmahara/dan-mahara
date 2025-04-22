@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dan Mahara | Full Stack Developer in Laravel, Android, Vue.js, React Native</title>
+    <meta name="description"
+        content="Dan Mahara is a Full Stack Developer based in Kathmandu, Nepal, specializing in Laravel, Android, Vue.js, and React Native. Let's build scalable web and mobile applications.">
+    <meta name="keywords"
+        content="Dan Mahara, Full Stack Developer, Laravel Developer Nepal, Vue.js, React Native, Android Developer, Web App Developer, Kathmandu Developer">
+    <meta name="author" content="Dan Mahara">
+    <link rel="canonical" href="https://danmahara.com/" />
+
+    <!-- Open Graph Meta -->
+    <meta property="og:title" content="Dan Mahara | Full Stack Developer">
+    <meta property="og:description"
+        content="Specializing in Laravel, Android, Vue.js, and React Native, Dan Mahara builds modern web and mobile applications.">
+    <meta property="og:image" content="https://danmahara.com/preview.jpg">
+    <meta property="og:url" content="https://danmahara.com/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Dan Mahara | Full Stack Developer">
+    <meta name="twitter:description"
+        content="Laravel, Android, Vue.js, React Native – Dan Mahara is a versatile full stack developer based in Kathmandu.">
+    <meta name="twitter:image" content="https://danmahara.com/preview.jpg">
+
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <meta name="robots" content="index, follow">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+
+    <style>
+        .active {
+            color: #4F46E5 !important;
+            /* Tailwind's primary-light */
+        }
+
+        .dark .active {
+            color: #6366F1 !important;
+            /* Tailwind's primary-dark */
+        }
+    </style>
+
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            light: '#4F46E5',
+                            dark: '#6366F1'
+                        },
+                        secondary: {
+                            light: '#10B981',
+                            dark: '#34D399'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Dan Mahara",
+            "url": "https://danmahara.com.np",
+            "sameAs": [],
+            "jobTitle": "Full Stack Developer",
+            "worksFor": {
+                "@type": "Organization",
+                "name": "Self-employed"
+            },
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Kathmandu",
+                "addressCountry": "Nepal"
+            },
+            "description": "Full Stack Developer with expertise in Laravel, Android, Vue.js, and React Native."
+        }
+        </script>
+</head>
+
+
+<body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300">
+    <!-- Header/Navigation -->
+    <header class="sticky top-0 z-50 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-primary-light dark:text-primary-dark">Dan Mahara</a>
+
+            <div class="flex items-center space-x-6">
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="hover:text-primary-light dark:hover:text-primary-dark">Home</a>
+                    <a href="skills.html" class="hover:text-primary-light dark:hover:text-primary-dark">Skills</a>
+                    <a href="projects.html" class="hover:text-primary-light dark:hover:text-primary-dark">Projects</a>
+                    <a href="contact.html" class="hover:text-primary-light dark:hover:text-primary-dark">Contact</a>
+                </div>
+
+                <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700">
+                    <i class="fas fa-moon dark:hidden"></i>
+                    <i class="fas fa-sun hidden dark:block"></i>
+                </button>
+
+                <!-- <a href="#contact"
+                    class="bg-primary-light dark:bg-primary-dark text-white px-4 py-2 rounded-md hover:opacity-90 transition">
+                    Hire Me
+                </a> -->
+
+                <button id="mobile-menu-button" class="md:hidden p-2">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-white dark:bg-gray-800 px-6 py-4 border-t border-gray-200 dark:border-gray-700">
+            <div class="flex flex-col space-y-4">
+                <a href="index.html" class="hover:text-primary-light dark:hover:text-primary-dark">Home</a>
+                <a href="skills.html" class="hover:text-primary-light dark:hover:text-primary-dark">Skills</a>
+                <a href="projects.html" class="hover:text-primary-light dark:hover:text-primary-dark">Projects</a>
+                <a href="contact.html" class="hover:text-primary-light dark:hover:text-primary-dark">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="container mx-auto px-6 py-20 md:py-32 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-12 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">
+                    Hi, I'm <span class="text-primary-light dark:text-primary-dark">Dan Mahara</span>
+                </h1>
+                <h2 class="text-2xl md:text-3xl font-semibold mb-6 text-gray-600 dark:text-gray-300">
+                    Full Stack Developer from Kathmandu, Nepal
+                </h2>
+                <p class="text-lg mb-8 text-gray-600 dark:text-gray-300">
+                    I build robust web applications, mobile apps, and solve complex problems with clean, efficient code.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="projects.html"
+                        class="bg-primary-light dark:bg-primary-dark text-white px-6 py-3 rounded-md hover:opacity-90 transition">
+                        View Projects
+                    </a>
+                    <a href="#"
+                        class="border border-primary-light dark:border-primary-dark text-primary-light dark:text-primary-dark px-6 py-3 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition">
+                        Download CV
+                    </a>
+                </div>
+            </div>
+
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative w-64 h-64 md:w-80 md:h-80">
+                    <div class="absolute inset-0 bg-primary-light dark:bg-primary-dark rounded-full opacity-10"></div>
+                    <div
+                        class="absolute inset-4 border-4 border-primary-light dark:border-primary-dark rounded-full opacity-20">
+                    </div>
+                    <div
+                        class="absolute inset-8 border-4 border-primary-light dark:border-primary-dark rounded-full opacity-30">
+                    </div>
+                    <div class="relative w-full h-full flex items-center justify-center">
+                        <div
+                            class="w-48 h-48 md:w-60 md:h-60 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden flex items-center justify-center">
+                            <i class="fas fa-user text-6xl text-gray-400 dark:text-gray-500"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-200 dark:bg-gray-700 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-600 dark:text-gray-300 text-sm">
+                &copy; <span id="year"></span> Dan Mahara. All rights reserved.
+                <!-- <span class="block mt-2">Last updated: June 2023</span> -->
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
+<script>
+    const themeToggle = document.getElementById('theme-toggle');
+    const html = document.documentElement;
+
+    // Toggle dark mode
+    themeToggle.addEventListener('click', () => {
+        html.classList.toggle('dark');
+        localStorage.setItem('theme', html.classList.contains('dark') ? 'dark' : 'light');
+    });
+
+    // Apply saved theme
+    if (localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        html.classList.add('dark');
+    }
+
+    // Toggle mobile menu
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close mobile menu when a link is clicked
+    document.querySelectorAll('#mobile-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+        });
+    });
+
+    // Highlight the active nav link
+    const currentPage = window.location.pathname.split("/").pop();
+    const links = document.querySelectorAll('nav a, #mobile-menu a');
+
+    links.forEach(link => {
+        const linkPage = link.getAttribute("href");
+        if (linkPage === currentPage || (linkPage === "index.html" && currentPage === "")) {
+            link.classList.add("active");
+        }
+    });
+</script>

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dan Mahara - Full Stack Developer from Kathmandu, Nepal specializing in Laravel, Android, Vue.js, and React Native">
+    <title>Dan Mahara | Full Stack Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            light: '#4F46E5',
+                            dark: '#6366F1'
+                        },
+                        secondary: {
+                            light: '#10B981',
+                            dark: '#34D399'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300">
+    <!-- Header/Navigation -->
+    <header class="sticky top-0 z-50 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-primary-light dark:text-primary-dark">Dan Mahara</a>
+            
+            <div class="flex items-center space-x-6">
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="hover:text-primary-light dark:hover:text-primary-dark">Home</a>
+                    <a href="#skills" class="hover:text-primary-light dark:hover:text-primary-dark">Skills</a>
+                    <a href="#projects" class="hover:text-primary-light dark:hover:text-primary-dark">Projects</a>
+                    <a href="#contact" class="hover:text-primary-light dark:hover:text-primary-dark">Contact</a>
+                </div>
+                
+                <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700">
+                    <i class="fas fa-moon dark:hidden"></i>
+                    <i class="fas fa-sun hidden dark:block"></i>
+                </button>
+                
+                <a href="#contact" class="bg-primary-light dark:bg-primary-dark text-white px-4 py-2 rounded-md hover:opacity-90 transition">
+                    Hire Me
+                </a>
+                
+                <button id="mobile-menu-button" class="md:hidden p-2">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </nav>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-gray-800 px-6 py-4 border-t border-gray-200 dark:border-gray-700">
+            <div class="flex flex-col space-y-4">
+                <a href="#home" class="hover:text-primary-light dark:hover:text-primary-dark">Home</a>
+                <a href="#skills" class="hover:text-primary-light dark:hover:text-primary-dark">Skills</a>
+                <a href="#projects" class="hover:text-primary-light dark:hover:text-primary-dark">Projects</a>
+                <a href="#contact" class="hover:text-primary-light dark:hover:text-primary-dark">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="container mx-auto px-6 py-20 md:py-32 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-12 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">
+                    Hi, I'm <span class="text-primary-light dark:text-primary-dark">Dan Mahara</span>
+                </h1>
+                <h2 class="text-2xl md:text-3xl font-semibold mb-6 text-gray-600 dark:text-gray-300">
+                    Full Stack Developer from Kathmandu, Nepal
+                </h2>
+                <p class="text-lg mb-8 text-gray-600 dark:text-gray-300">
+                    I build robust web applications, mobile apps, and solve complex problems with clean, efficient code.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#projects" class="bg-primary-light dark:bg-primary-dark text-white px-6 py-3 rounded-md hover:opacity-90 transition">
+                        View Projects
+                    </a>
+                    <a href="#" class="border border-primary-light dark:border-primary-dark text-primary-light dark:text-primary-dark px-6 py-3 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition">
+                        Download CV
+                    </a>
+                </div>
+            </div>
+            
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative w-64 h-64 md:w-80 md:h-80">
+                    <div class="absolute inset-0 bg-primary-light dark:bg-primary-dark rounded-full opacity-10"></div>
+                    <div class="absolute inset-4 border-4 border-primary-light dark:border-primary-dark rounded-full opacity-20"></div>
+                    <div class="absolute inset-8 border-4 border-primary-light dark:border-primary-dark rounded-full opacity-30"></div>
+                    <div class="relative w-full h-full flex items-center justify-center">
+                        <div class="w-48 h-48 md:w-60 md:h-60 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden flex items-center justify-center">
+                            <i class="fas fa-user text-6xl text-gray-400 dark:text-gray-500"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="bg-gray-100 dark:bg-gray-800 py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-4">My Skills</h2>
+                <p class="text-center text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-12">
+                    I've worked with a variety of technologies in the web and mobile development world.
+                </p>
+                
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                    <!-- Laravel -->
+                    <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                        <div class="text-4xl text-red-500 mb-4">
+                            <i class="fab fa-laravel"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Laravel</h3>
+                        <ul class="text-gray-600 dark:text-gray-300 text-sm space-y-1">
+                            <li>Admin Panels</li>
+                            <li>REST APIs</li>
+                            <li>Authentication</li>
+                            <li>CRUD Operations</li>
+                            <li>Notifications</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Android -->
+                    <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                        <div class="text-4xl text-green-500 mb-4">
+                            <i class="fab fa-android"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Android (Java)</h3>
+                        <ul class="text-gray-600 dark:text-gray-300 text-sm space-y-1">
+                            <li>WiFi Direct File Sharing</li>
+                            <li>RecyclerView</li>
+                            <li>Intents</li>
+                            <li>APK Handling</li>
+                            <li>Custom UI Components</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Vue.js -->
+                    <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                        <div class="text-4xl text-green-400 mb-4">
+                            <i class="fab fa-vuejs"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Vue.js</h3>
+                        <ul class="text-gray-600 dark:text-gray-300 text-sm space-y-1">
+                            <li>Frontend for Laravel Apps</li>
+                            <li>Component Architecture</li>
+                            <li>State Management</li>
+                            <li>API Integration</li>
+                            <li>Responsive Design</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- React Native -->
+                    <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                        <div class="text-4xl text-blue-400 mb-4">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">React Native</h3>
+                        <ul class="text-gray-600 dark:text-gray-300 text-sm space-y-1">
+                            <li>Cross-platform Apps</li>
+                            <li>Quiz App with Timer</li>
+                            <li>Score Tracking</li>
+                            <li>Category Filtering</li>
+                            <li>Offline Capabilities</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Linux -->
+                    <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                        <div class="text-4xl text-yellow-500 mb-4">
+                            <i class="fab fa-linux"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Linux</h3>
+                        <ul class="text-gray-600 dark:text-gray-300 text-sm space-y-1">
+                            <li>Server Hosting</li>
+                            <li>Terminal Commands</li>
+                            <li>Bash Scripting</li>
+                            <li>Server Maintenance</li>
+                            <li>Deployment</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-4">Featured Projects</h2>
+                <p class="text-center text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-12">
+                    Here are some of my recent projects that showcase my skills and expertise.
+                </p>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Laravel Admin Panel -->
+                    <div class="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition">
+                        <div class="h-48 bg-gradient-to-r from-purple-500 to-indigo-600 flex items-center justify-center">
+                            <i class="fas fa-tools text-white text-6xl"></i>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Laravel Admin Panel</h3>
+                            <p class="text-gray-600 dark:text-gray-300 mb-4">
+                                A comprehensive admin dashboard with user management, analytics, and customizable modules.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-3 py-1 rounded-full">Laravel</span>
+                                <span class="bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-xs px-3 py-1 rounded-full">Vue.js</span>
+                                <span class="bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 text-xs px-3 py-1 rounded-full">MySQL</span>
+                            </div>
+                            <a href="#" class="text-primary-light dark:text-primary-dark font-medium hover:underline">View Project →</a>
+                        </div>
+                    </div>
+                    
+                    <!-- WiFi Direct File Sharing -->
+                    <div class="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition">
+                        <div class="h-48 bg-gradient-to-r from-green-500 to-teal-600 flex items-center justify-center">
+                            <i class="fas fa-wifi text-white text-6xl"></i>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">WiFi Direct File Sharing</h3>
+                            <p class="text-gray-600 dark:text-gray-300 mb-4">
+                                Android app for fast, secure file transfers between devices without internet using WiFi Direct.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-xs px-3 py-1 rounded-full">Android</span>
+                                <span class="bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 text-xs px-3 py-1 rounded-full">Java</span>
+                                <span class="bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 text-xs px-3 py-1 rounded-full">WiFi Direct</span>
+                            </div>
+                            <a href="#" class="text-primary-light dark:text-primary-dark font-medium hover:underline">View Project →</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Quiz App -->
+                    <div class="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition">
+                        <div class="h-48 bg-gradient-to-r from-blue-500 to-cyan-600 flex items-center justify-center">
+                            <i class="fas fa-question-circle text-white text-6xl"></i>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">React Native Quiz App</h3>
+                            <p class="text-gray-600 dark:text-gray-300 mb-4">
+                                Mobile quiz application with timer, score tracking, multiple categories, and progress saving.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-3 py-1 rounded-full">React Native</span>
+                                <span class="bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 text-xs px-3 py-1 rounded-full">JavaScript</span>
+                                <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs px-3 py-1 rounded-full">AsyncStorage</span>
+                            </div>
+                            <a href="#" class="text-primary-light dark:text-primary-dark font-medium hover:underline">View Project →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-12">
+                    <a href="#" class="inline-flex items-center text-primary-light dark:text-primary-dark font-medium hover:underline">
+                        View All Projects
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="bg-gray-100 dark:bg-gray-800 py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-4">Get In Touch</h2>
+                <p class="text-center text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-12">
+                    Have a project in mind or want to discuss potential opportunities? Feel free to reach out!
+                </p>
+                
+                <div class="max-w-4xl mx-auto bg-white dark:bg-gray-700 rounded-xl shadow-md overflow-hidden">
+                    <div class="md:flex">
+                        <div class="md:w-1/2 bg-primary-light dark:bg-primary-dark p-8 text-white">
+                            <h3 class="text-xl font-semibold mb-4">Contact Information</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-start">
+                                    <i class="fas fa-map-marker-alt mt-1 mr-4"></i>
+                                    <p>Kathmandu, Nepal</p>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-envelope mt-1 mr-4"></i>
+                                    <p>dan.mahara@example.com</p>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-phone-alt mt-1 mr-4"></i>
+                                    <p>+977 98XXXXXXXX</p>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-8">
+                                <h3 class="text-xl font-semibold mb-4">Connect With Me</h3>
+                                <div class="flex space-x-4">
+                                    <a href="#" class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center hover:bg-white/30 transition">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center hover:bg-white/30 transition">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                    <a href="#" class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center hover:bg-white/30 transition">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="#" class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center hover:bg-white/30 transition">
+                                        <i class="fab fa-stack-overflow"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="md:w-1/2 p-8">
+                            <form>
+                                <div class="mb-4">
+                                    <label for="name" class="block text-gray-700 dark:text-gray-300 mb-2">Name</label>
+                                    <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-light dark:focus:ring-primary-dark dark:bg-gray-800">
+                                </div>
+                                <div class="mb-4">
+                                    <label for="email" class="block text-gray-700 dark:text-gray-300 mb-2">Email</label>
+                                    <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-light dark:focus:ring-primary-dark dark:bg-gray-800">
+                                </div>
+                                <div class="mb-4">
+                                    <label for="subject" class="block text-gray-700 dark:text-gray-300 mb-2">Subject</label>
+                                    <input type="text" id="subject" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-light dark:focus:ring-primary-dark dark:bg-gray-800">
+                                </div>
+                                <div class="mb-4">
+                                    <label for="message" class="block text-gray-700 dark:text-gray-300 mb-2">Message</label>
+                                    <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-light dark:focus:ring-primary-dark dark:bg-gray-800"></textarea>
+                                </div>
+                                <button type="submit" class="w-full bg-primary-light dark:bg-primary-dark text-white py-3 rounded-md hover:opacity-90 transition">
+                                    Send Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <a href="#" class="text-2xl font-bold text-white">Dan Mahara</a>
+                    <p class="mt-2">Full Stack Developer</p>
+                </div>
+                
+                <div class="flex flex-col items-center md:items-end">
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="hover:text-white transition">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
+                        <a href="#" class="hover:text-white transition">
+                            <i class="fab fa-linkedin-in text-xl"></i>
+                        </a>
+                        <a href="#" class="hover:text-white transition">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="hover:text-white transition">
+                            <i class="fab fa-stack-overflow text-xl"></i>
+                        </a>
+                    </div>
+                    <p>&copy; 2023 Dan Mahara. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Dark mode toggle
+        const themeToggle = document.getElementById('theme-toggle');
+        const html = document.documentElement;
+        
+        themeToggle.addEventListener('click', () => {
+            html.classList.toggle('dark');
+            localStorage.setItem('theme', html.classList.contains('dark') ? 'dark' : 'light');
+        });
+        
+        // Check for saved theme preference
+        if (localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            html.classList.add('dark');
+        }
+        
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>

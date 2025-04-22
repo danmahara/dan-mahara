@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Dan Mahara's comprehensive technical skills in Full Stack Development including Laravel, Android, Vue.js, React Native, and Linux server administration.">
+    <meta name="keywords"
+        content="Dan Mahara, Full Stack Developer skills, Laravel expert, Android Java developer, Vue.js developer, React Native programmer, Linux server admin, Nepal developer">
+    <meta name="author" content="Dan Mahara">
+    <link rel="canonical" href="https://your-website.com/skills" />
+    <meta property="og:title" content="Dan Mahara | Full Stack Developer Skills - Laravel, Android, Vue.js">
+    <meta property="og:description"
+        content="Detailed overview of Dan Mahara's technical skills including Laravel backend development, Android apps, Vue.js frontend, React Native mobile apps, and Linux server management.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-website.com/skills">
+    <meta property="og:image" content="https://your-website.com/images/skills-preview.jpg">
+    <meta property="og:site_name" content="Dan Mahara Portfolio">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Dan Mahara | Full Stack Developer Skills">
+    <meta name="twitter:description" content="View my complete skill set in web and mobile development technologies.">
+    <meta name="twitter:image" content="https://your-website.com/images/skills-preview.jpg">
+    <meta name="robots" content="index, follow">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+    <title>Full Stack Developer Skills | Dan Mahara - Laravel, Android, Vue.js Expert</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <style>
+        .active {
+            color: #4F46E5 !important;
+            /* Tailwind's primary-light */
+        }
+
+        .dark .active {
+            color: #6366F1 !important;
+            /* Tailwind's primary-dark */
+        }
+    </style>
+
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            light: '#4F46E5',
+                            dark: '#6366F1'
+                        },
+                        secondary: {
+                            light: '#10B981',
+                            dark: '#34D399'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Dan Mahara",
+      "jobTitle": "Full Stack Developer",
+      "url": "https://your-website.com",
+      "sameAs": [
+        "https://github.com/yourusername",
+        "https://linkedin.com/in/yourprofile"
+      ],
+      "alumniOf": "University Name",
+      "knowsAbout": [
+        {"@type": "Thing", "name": "Laravel", "description": "PHP framework for web applications"},
+        {"@type": "Thing", "name": "Android Development", "description": "Mobile app development using Java"},
+        {"@type": "Thing", "name": "Vue.js", "description": "JavaScript framework for building user interfaces"},
+        {"@type": "Thing", "name": "React Native", "description": "Framework for building cross-platform mobile apps"},
+        {"@type": "Thing", "name": "Linux Administration", "description": "Server management and deployment"}
+      ],
+      "hasOccupation": {
+        "@type": "Occupation",
+        "name": "Full Stack Developer",
+        "skills": ["Laravel", "Android", "Vue.js", "React Native", "Linux"]
+      }
+    }
+    </script>
+</head>
+
+<body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300">
+    <!-- Header/Navigation -->
+    <header class="sticky top-0 z-50 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-primary-light dark:text-primary-dark">Dan Mahara</a>
+
+            <div class="flex items-center space-x-6">
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="hover:text-primary-light dark:hover:text-primary-dark">Home</a>
+                    <a href="skills.html" aria-current="page"
+                        class="hover:text-primary-light dark:hover:text-primary-dark">Skills</a>
+                    <a href="projects.html" class="hover:text-primary-light dark:hover:text-primary-dark">Projects</a>
+                    <a href="contact.html" class="hover:text-primary-light dark:hover:text-primary-dark">Contact</a>
+                </div>
+
+                <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700"
+                    aria-label="Toggle dark mode">
+                    <i class="fas fa-moon dark:hidden" aria-hidden="true"></i>
+                    <i class="fas fa-sun hidden dark:block" aria-hidden="true"></i>
+                </button>
+
+                <!-- <a href="contact.html"
+                    class="bg-primary-light dark:bg-primary-dark text-white px-4 py-2 rounded-md hover:opacity-90 transition">
+                    Hire Me
+                </a> -->
+
+                <button id="mobile-menu-button" class="md:hidden p-2" aria-label="Open mobile menu">
+                    <i class="fas fa-bars text-xl" aria-hidden="true"></i>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-white dark:bg-gray-800 px-6 py-4 border-t border-gray-200 dark:border-gray-700">
+            <div class="flex flex-col space-y-4">
+                <a href="index.html" class="hover:text-primary-light dark:hover:text-primary-dark">Home</a>
+                <a href="skills.html" aria-current="page"
+                    class="hover:text-primary-light dark:hover:text-primary-dark">Skills</a>
+                <a href="projects.html" class="hover:text-primary-light dark:hover:text-primary-dark">Projects</a>
+                <a href="contact.html" class="hover:text-primary-light dark:hover:text-primary-dark">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Skills Section -->
+        <section id="skills" class="bg-gray-100 dark:bg-gray-800 py-20" aria-label="Developer Skills">
+            <div class="container mx-auto px-6">
+                <h1 class="text-4xl font-extrabold text-center mb-6">Dan Mahara — Full Stack Development Expertise</h1>
+                <p class="text-center text-gray-700 dark:text-gray-300 max-w-2xl mx-auto mb-12 leading-relaxed">
+                    Backed by over two years of hands-on experience, I specialize in building scalable and
+                    high-performance web and mobile applications.
+                    My skill set spans a wide range of modern technologies and frameworks, enabling me to craft robust,
+                    efficient, and user-centric solutions.
+                    Here's a snapshot of the core tools and platforms I work with daily.
+                </p>
+
+
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                    <!-- Laravel -->
+                    <article class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-lg transition"
+                        aria-label="Laravel Skills">
+                        <div class="text-4xl text-red-500 mb-4">
+                            <i class="fab fa-laravel" aria-hidden="true" aria-label="Laravel icon"></i>
+                        </div>
+                        <h2 class="text-xl font-semibold mb-2">Laravel</h2>
+                        <ul class="text-gray-600 dark:text-gray-300 text-sm space-y-1">
+                            <li>Admin Panels</li>
+                            <li>REST APIs</li>
+                            <li>Authentication</li>
+                            <li>CRUD Operations</li>
+                            <li>Notifications</li>
+                        </ul>
+                        <p class="mt-3 text-xs text-gray-500 dark:text-gray-400">Experience: 2 years</p>
+                    </article>
+
+                    <!-- Android -->
+                    <article class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-lg transition"
+                        aria-label="Android Skills">
+                        <div class="text-4xl text-green-500 mb-4">
+                            <i class="fab fa-android" aria-hidden="true" aria-label="Android icon"></i>
+                        </div>
+                        <h2 class="text-xl font-semibold mb-2">Android (Java)</h2>
+                        <ul class="text-gray-600 dark:text-gray-300 text-sm space-y-1">
+                            <li>WiFi Direct File Sharing</li>
+                            <li>RecyclerView</li>
+                            <li>Intents</li>
+                            <li>APK Handling</li>
+                            <li>Custom UI Components</li>
+                        </ul>
+                        <p class="mt-3 text-xs text-gray-500 dark:text-gray-400">Experience: 1 years</p>
+                    </article>
+
+                    <!-- Vue.js -->
+                    <article class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-lg transition"
+                        aria-label="Vue.js Skills">
+                        <div class="text-4xl text-green-400 mb-4">
+                            <i class="fab fa-vuejs" aria-hidden="true" aria-label="Vue.js icon"></i>
+                        </div>
+                        <h2 class="text-xl font-semibold mb-2">Vue.js</h2>
+                        <ul class="text-gray-600 dark:text-gray-300 text-sm space-y-1">
+                            <li>Frontend for Laravel Apps</li>
+                            <li>Component Architecture</li>
+                            <li>State Management</li>
+                            <li>API Integration</li>
+                            <li>Responsive Design</li>
+                        </ul>
+                        <p class="mt-3 text-xs text-gray-500 dark:text-gray-400">Experience: 1 years</p>
+                    </article>
+
+                    <!-- React Native -->
+                    <article class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-lg transition"
+                        aria-label="React Native Skills">
+                        <div class="text-4xl text-blue-400 mb-4">
+                            <i class="fab fa-react" aria-hidden="true" aria-label="React Native icon"></i>
+                        </div>
+                        <h2 class="text-xl font-semibold mb-2">React Native</h2>
+                        <ul class="text-gray-600 dark:text-gray-300 text-sm space-y-1">
+                            <li>Cross-platform Apps</li>
+                            <li>Quiz App with Timer</li>
+                            <li>Score Tracking</li>
+                            <li>Category Filtering</li>
+                            <li>Offline Capabilities</li>
+                        </ul>
+                        <p class="mt-3 text-xs text-gray-500 dark:text-gray-400">Experience: 1 years</p>
+                    </article>
+
+                    <!-- Linux -->
+                    <article class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-lg transition"
+                        aria-label="Linux Skills">
+                        <div class="text-4xl text-yellow-500 mb-4">
+                            <i class="fab fa-linux" aria-hidden="true" aria-label="Linux icon"></i>
+                        </div>
+                        <h2 class="text-xl font-semibold mb-2">Linux</h2>
+                        <ul class="text-gray-600 dark:text-gray-300 text-sm space-y-1">
+                            <li>Server Hosting</li>
+                            <li>Terminal Commands</li>
+                            <li>Bash Scripting</li>
+                            <li>Server Maintenance</li>
+                            <li>Deployment</li>
+                        </ul>
+                        <p class="mt-3 text-xs text-gray-500 dark:text-gray-400">Experience: 1 years</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-200 dark:bg-gray-700 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-600 dark:text-gray-300 text-sm">
+                &copy; <span id="year"></span> Dan Mahara. All rights reserved.
+                <!-- <span class="block mt-2">Last updated: June 2023</span> -->
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const html = document.documentElement;
+
+        // Toggle dark mode
+        themeToggle.addEventListener('click', () => {
+            html.classList.toggle('dark');
+            localStorage.setItem('theme', html.classList.contains('dark') ? 'dark' : 'light');
+        });
+
+        // Apply saved theme
+        if (localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            html.classList.add('dark');
+        }
+
+        // Toggle mobile menu
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Highlight the active nav link
+        const currentPage = window.location.pathname.split("/").pop();
+        const links = document.querySelectorAll('nav a, #mobile-menu a');
+
+        links.forEach(link => {
+            const linkPage = link.getAttribute("href");
+            if (linkPage === currentPage || (linkPage === "index.html" && currentPage === "")) {
+                link.classList.add("active");
+            }
+        });
+    </script>
+</body>
+
+</html>
