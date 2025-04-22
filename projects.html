@@ -1,68 +1,74 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="language" content="English" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        
-        <title>Dan Mahara | Projects - Laravel, Android, Vue.js, React Native</title>
-      
-        <meta name="description" content="Explore the projects built by Dan Mahara, a Full Stack Developer based in Kathmandu, Nepal. Projects include Laravel web apps, Android apps, Vue.js UIs, and cross-platform apps with React Native." />
-        <meta name="keywords" content="Dan Mahara, Full Stack Developer Projects, Laravel Projects, Android Projects, Vue.js Projects, React Native Apps, Nepal Developer Portfolio" />
-        <meta name="author" content="Dan Mahara" />
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://danmahara.com.np/projects.html" />
-      
-        <!-- Open Graph Meta -->
-        <meta property="og:title" content="Dan Mahara | Full Stack Developer Projects" />
-        <meta property="og:description" content="Specializing in Laravel, Android, Vue.js, and React Native, Dan Mahara showcases modern web and mobile app projects." />
-        <meta property="og:image" content="https://danmahara.com.np/images/projects-preview.jpg" />
-        <meta property="og:url" content="https://danmahara.com.np/projects.html" />
-        <meta property="og:type" content="website" />
-      
-        <!-- Twitter Card -->
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Dan Mahara | Full Stack Developer Projects" />
-        <meta name="twitter:description" content="Laravel, Android, Vue.js, React Native – View my best project works as a full stack developer." />
-        <meta name="twitter:image" content="https://danmahara.com.np/images/projects-preview.jpg" />
-      
-        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-      
-        <!-- Tailwind & Font Awesome -->
-        <script src="https://cdn.tailwindcss.com"></script>
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
-      
-        <style>
-          .active {
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="language" content="English" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Dan Mahara | Projects - Laravel, Android, Vue.js, React Native</title>
+
+    <meta name="description"
+        content="Explore the projects built by Dan Mahara, a Full Stack Developer based in Kathmandu, Nepal. Projects include Laravel web apps, Android apps, Vue.js UIs, and cross-platform apps with React Native." />
+    <meta name="keywords"
+        content="Dan Mahara, Full Stack Developer Projects, Laravel Projects, Android Projects, Vue.js Projects, React Native Apps, Nepal Developer Portfolio" />
+    <meta name="author" content="Dan Mahara" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://danmahara.com.np/projects.html" />
+
+    <!-- Open Graph Meta -->
+    <meta property="og:title" content="Dan Mahara | Full Stack Developer Projects" />
+    <meta property="og:description"
+        content="Specializing in Laravel, Android, Vue.js, and React Native, Dan Mahara showcases modern web and mobile app projects." />
+    <meta property="og:image" content="https://danmahara.com.np/images/projects-preview.jpg" />
+    <meta property="og:url" content="https://danmahara.com.np/projects.html" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Dan Mahara | Full Stack Developer Projects" />
+    <meta name="twitter:description"
+        content="Laravel, Android, Vue.js, React Native – View my best project works as a full stack developer." />
+    <meta name="twitter:image" content="https://danmahara.com.np/images/projects-preview.jpg" />
+
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+    <!-- Tailwind & Font Awesome -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+
+    <style>
+        .active {
             color: #4F46E5 !important;
-          }
-          .dark .active {
+        }
+
+        .dark .active {
             color: #6366F1 !important;
-          }
-        </style>
-      
-        <script>
-          tailwind.config = {
+        }
+    </style>
+
+    <script>
+        tailwind.config = {
             darkMode: 'class',
             theme: {
-              extend: {
-                colors: {
-                  primary: {
-                    light: '#4F46E5',
-                    dark: '#6366F1'
-                  },
-                  secondary: {
-                    light: '#10B981',
-                    dark: '#34D399'
-                  }
+                extend: {
+                    colors: {
+                        primary: {
+                            light: '#4F46E5',
+                            dark: '#6366F1'
+                        },
+                        secondary: {
+                            light: '#10B981',
+                            dark: '#34D399'
+                        }
+                    }
                 }
-              }
             }
-          }
-        </script>
-      
-        <!-- JSON-LD Structured Data -->
-        <script type="application/ld+json">
+        }
+    </script>
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
         {
           "@context": "https://schema.org",
           "@type": "ItemList",
@@ -101,13 +107,18 @@
           ]
         }
         </script>
-      </head>
-      
+</head>
+
 <body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300">
     <!-- Header / Navigation -->
     <header class="sticky top-0 z-50 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm shadow-sm" role="banner">
-        <nav class="container mx-auto px-6 py-4 flex justify-between items-center" role="navigation"
+        <!-- <nav class="container mx-auto px-6 py-4 flex justify-between items-center" role="navigation"
+            aria-label="Main navigation"> -->
+
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center h-20" role="navigation"
             aria-label="Main navigation">
+
+
             <a href="index.html" class="text-2xl font-bold text-primary-light dark:text-primary-dark"
                 aria-label="Homepage">Dan Mahara</a>
             <div class="flex items-center space-x-6">
