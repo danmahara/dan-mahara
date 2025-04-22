@@ -191,9 +191,16 @@
                     Here's a snapshot of the core tools and platforms I work with daily.
                 </p>
 
-
-                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-                    <!-- Laravel -->
+                <style>
+                  @media (max-width: 400px) {
+                    .grid-cols-xs-1 {
+                      grid-template-columns: repeat(1, minmax(0, 1fr));
+                    }
+                  }
+                </style>
+                
+                <div class="grid grid-cols-2 grid-cols-xs-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                  <!-- Laravel -->
                     <article class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-lg transition"
                         aria-label="Laravel Skills">
                         <div class="text-4xl text-red-500 mb-4">
