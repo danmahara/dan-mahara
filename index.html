@@ -32,6 +32,26 @@
 
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
     <!-- Tailwind & Font Awesome -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
@@ -98,7 +118,7 @@
     <!-- Header/Navigation -->
     <header class="sticky top-0 z-50 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm shadow-sm">
         <!-- <nav class="container mx-auto px-6 py-4 flex justify-between items-center"> -->
-            <nav class="container mx-auto px-6 py-4 flex justify-between items-center h-20">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center h-20">
 
             <a href="#" class="text-2xl font-bold text-primary-light dark:text-primary-dark">Dan Mahara</a>
 
@@ -182,20 +202,19 @@
                 </div> -->
                 <div class="relative w-64 h-64 md:w-80 md:h-80">
                     <div class="absolute inset-0 bg-primary-light dark:bg-primary-dark rounded-full opacity-10"></div>
-                    <div class="absolute inset-4 border-4 border-primary-light dark:border-primary-dark rounded-full opacity-20"></div>
-                    <div class="absolute inset-8 border-4 border-primary-light dark:border-primary-dark rounded-full opacity-30"></div>
+                    <div
+                        class="absolute inset-4 border-4 border-primary-light dark:border-primary-dark rounded-full opacity-20">
+                    </div>
+                    <div
+                        class="absolute inset-8 border-4 border-primary-light dark:border-primary-dark rounded-full opacity-30">
+                    </div>
                     <div class="relative w-full h-full flex items-center justify-center">
-                        <div class="w-48 h-48 md:w-60 md:h-60 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden flex items-center justify-center">
+                        <div
+                            class="w-48 h-48 md:w-60 md:h-60 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden flex items-center justify-center">
                             <picture>
                                 <source srcset="preview.webp" type="image/webp">
-                                <img 
-                                    src="preview.jpg" 
-                                    alt="Profile preview" 
-                                    width="240" height="240" 
-                                    loading="lazy" 
-                                    decoding="async"
-                                    class="w-full h-full object-cover"
-                                >
+                                <img src="preview.jpg" alt="Profile preview" width="240" height="240" loading="lazy"
+                                    decoding="async" class="w-full h-full object-cover">
                             </picture>
                         </div>
                     </div>
