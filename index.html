@@ -150,15 +150,36 @@
                 </button>
             </div>
         </nav>
-        
+
         <div id="install-prompt" class="fixed bottom-6 right-6 bg-white shadow-lg rounded-lg p-4 w-72 hidden z-50">
             <p class="text-sm mb-3">Install this app on your Android device for a better experience.</p>
             <button id="install-button" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 w-full">
                 Install App
             </button>
         </div>
-        
-        
+
+        <!-- Install Modal -->
+        <div id="install-modal"
+            class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl p-6 w-80">
+                <h2 class="text-lg font-semibold mb-4 text-gray-900 dark:text-white">Install App</h2>
+                <p class="text-sm mb-6 text-gray-700 dark:text-gray-300">
+                    Install this app on your Android device for a better experience.
+                </p>
+                <div class="flex justify-end space-x-3">
+                    <button id="cancel-install"
+                        class="px-4 py-2 rounded-md bg-gray-300 dark:bg-gray-600 text-gray-800 dark:text-white hover:bg-gray-400 dark:hover:bg-gray-500">
+                        Cancel
+                    </button>
+                    <button id="install-button" class="px-4 py-2 rounded-md bg-blue-600 text-white hover:bg-blue-700">
+                        Install
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+
 
         <!-- Mobile Menu -->
         <div id="mobile-menu"
@@ -252,6 +273,39 @@
 </html>
 <script>
     let deferredPrompt;
+  
+    window.addEventListener('beforeinstallprompt', (e) => {
+      // Prevent auto-prompt
+      e.preventDefault();
+      deferredPrompt = e;
+  
+      // Check if it's Android (basic check)
+      if (/android/i.test(navigator.userAgent)) {
+        document.getElementById('install-modal').classList.remove('hidden');
+      }
+    });
+  
+    document.getElementById('install-button').addEventListener('click', async () => {
+      if (deferredPrompt) {
+        deferredPrompt.prompt();
+        const { outcome } = await deferredPrompt.userChoice;
+        if (outcome === 'accepted') {
+          console.log('App installed');
+        } else {
+          console.log('App installation dismissed');
+        }
+        deferredPrompt = null;
+        document.getElementById('install-modal').classList.add('hidden');
+      }
+    });
+  
+    document.getElementById('cancel-install').addEventListener('click', () => {
+      document.getElementById('install-modal').classList.add('hidden');
+    });
+  </script>
+  
+<!-- <script>
+    let deferredPrompt;
 
     function isAndroid() {
         return /android/i.test(navigator.userAgent);
@@ -276,7 +330,7 @@
             document.getElementById('install-prompt').classList.add('hidden');
         }
     });
-</script>
+</script> -->
 
 
 
@@ -321,7 +375,7 @@
         }
     });
 
-    
+
 
     if ("serviceWorker" in navigator) {
         window.addEventListener("load", () => {
